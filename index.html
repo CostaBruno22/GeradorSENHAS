@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <title>Gerador de Senhas</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="/assets/images/BrcLogo.png" alt="Logo">
+                    <span>Gerador de Senhas</span>
+                </div>
+                <div class="input-box">
+                    <input type="text" disabled>
+                    <span class="material-symbols-rounded">copy_all</span>
+                </div>
+
+                <div class="pass-indicator"></div>
+                <div class="pass-length">
+                    <div class="details">
+                        <label class="title">Comprimento da Senha</label>
+                        <span></span>
+                    </div>
+                    <input type="range" min="1" max="30" value="15" step="1">
+                </div>
+
+                <div class="pass-settings">
+                    <label class="title">Configuração de Senha</label>
+                    <ul class="options">
+                        <li class="option">
+                            <input type="checkbox" id="lowercase" checked>
+                            <label for="lowercase">Minúscula (a-z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="uppercase">
+                            <label for="uppercasecase">Maiúscula (a-z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="symbols">
+                            <label for="symbols">Símbolos (!-$%#)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="exc-duplicate">
+                            <label for="exc-duplicate">Sem Repetição de Caracteres</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="spaces">
+                            <label for="spaces">Incluir Espaços a Senha</label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <button class="generate-btn">Gerar Senha</button>
+            </div>
+        </div>
+    </main>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
